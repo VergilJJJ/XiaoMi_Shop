@@ -1,0 +1,124 @@
+#root{
+   
+}
+a{
+    color: #e7e7e7;
+}
+
+.container{
+    margin: 0px auto;
+    width: 1080px;
+}
+
+.m-site-top{
+    height: 48px;
+    background: #333;
+    font-size: 14px;
+    position: relative;
+    color: #e7e7e7;
+}
+
+.m-site-top .m-line{
+    border-color: #666;
+    margin: 17px 3px 0 6px;
+}
+.m-line{
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    border-right: 1px solid #e7e7e7;
+}
+
+.m-site-top .site-item {
+    position: relative;
+    margin-left: 5px;
+    text-align: center;
+}
+.m-site-top .site-item .m-no-login{
+    margin-right: 8px;
+}
+.m-site-top .m-no-login a {
+    margin-left: 8px;
+}
+
+.m-site-top .m-no-login, .m-site-top .m-user {
+    height: 48px;
+    line-height: 48px;
+}
+.m-site-top .m-help {
+    position: relative;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    margin-right: 8px;
+    margin-left: 11px;
+}
+
+.m-site-top .m-download .h-icon-con {
+    text-align: left;
+    left: 0;
+    padding-left: 30px;
+}
+
+.m-site-top .h-icon-con {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+}
+.m-site-top, .m-site-top a {
+    color: #e7e7e7;
+}
+.h-icon-con {
+    margin-right: 5px;
+    position: relative;
+}
+.m-site-top .site-item {
+    position: relative;
+    margin-left: 5px;
+    text-align: center;
+}
+.m-site-top .h-app-icon {
+    left: 0;
+    top: 9px;
+}
+.h-icons {
+    position: absolute;
+}
+
+.m-icons-app {
+    width: 30px;
+    height: 30px;
+    background-position: 0 -1016px;
+}
+.m-icons {
+    display: inline-block;
+    background-image: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.2bf57ccf.png);
+}
+.m-site-top .m-clauses-con .m-clauses {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.m-site-top, .m-site-top a {
+    color: #e7e7e7;
+}
+.m-site-top .m-clauses-con .h-down-icon {
+    right: 10px;
+}
+.m-site-top .h-down-icon {
+    top: 10px;
+    right: 0;
+}
+.h-icons {
+    position: absolute;
+}
+.m-icons-dropdown {
+    width: 30px;
+    height: 30px;
+    background-position: 0 -1662px;
+}
+.m-icons {
+    display: inline-block;
+    background-image: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.2bf57ccf.png);
+}
