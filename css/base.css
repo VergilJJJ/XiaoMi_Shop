@@ -134,3 +134,6 @@ em {
 .f16 {
     font-size: 16px;
 }
+.hidden{
+    display: none;
+}
