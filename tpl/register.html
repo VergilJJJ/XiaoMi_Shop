@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小米有品注册页</title>
     <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/register.js"></script>
 </head>
 
 <body>
@@ -20,16 +22,16 @@
                 <div class="tab-con">
                     <div class="reg-area">
                         <div class="phone">
-                            <input type="text" class="reg-input" placeholder="请输入你的手机号码">
-                            <span>错了</span>
-                            <input type="password" class="reg-input" placeholder="请输入你的密码">
-                            <input type="password" class="reg-input" placeholder="请确认你的密码">
+                            <input id="phone" type="text" class="reg-input" placeholder="请输入你的手机号码11位">
+                            <input id="passwordA" type="password" class="reg-input" placeholder="请输入你的密码:6到20个字符">
+                            <input id="passwordB" type="password" class="reg-input" placeholder="请确认你的密码">
+                            <span id="errorMsg"></span>
                         </div>
                         <div class="regin-button">
                             <input id="regbtn" type="submit" value="注册">
                         </div>
                         <div id="reg-keep">
-                            <label for="keep">
+                            <label for="keep" id="checkbox">
                                 <input type="checkbox" id="keep">协议,不同意不给注册
                             </label>
                         </div>
