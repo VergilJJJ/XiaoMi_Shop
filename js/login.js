@@ -47,7 +47,10 @@ $(function () {
                     alert("登陆成功");
                     // 判断是否有勾选10天免登陆
                     if ($("#keep").prop("checked") == true) {
-                        
+                        // 如果有勾选,将账号密码存到cookie并设置十天后过期
+                        var time = new Date();
+                        time.setDate(time.getDate() + 10);
+                        document.cookie = "keeplogin" + "=" + `username=${username}&&password=${password}` + ";expires=" + time;
                     }
                 }
             }
