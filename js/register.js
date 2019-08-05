@@ -80,7 +80,8 @@ $(function () {
     // 给协议多选框添加选中条件
     var check = false;
     $("#keep").on("click", function () {
-        return check = $("#keep").prop("checked")
+        // return check = $("#keep").prop("checked")
         // console.log($("#keep"));
+        console.log($("#keep").prop("localName"));
     })
 })
