@@ -10,6 +10,13 @@ $(function () {
 
     });
 
+    // 写一个方法来删除之前保存的cookie
+    function delCookie(name) {//为了删除指定名称的cookie，可以将其过期时间设定为一个过去的时间 
+        var date = new Date();
+        date.setTime(date.getTime() - 10000);
+        document.cookie = name + "=a; expires=" + date.toGMTString();
+    }
+
     // 00点击开始验证
     $("#logbtn").on("click", function () {
         // 获得输入的验证码
@@ -46,11 +53,15 @@ $(function () {
                     $("#userpwd").css("border", "3px solid green");
                     alert("登陆成功");
                     // 判断是否有勾选10天免登陆
+                    // 删除之前一个登陆账号的信息
+                    delCookie("keeplogin");
                     if ($("#keep").prop("checked") == true) {
                         // 如果有勾选,将账号密码存到cookie并设置十天后过期
                         var time = new Date();
                         time.setDate(time.getDate() + 10);
                         document.cookie = "keeplogin" + "=" + `username=${username}&&password=${password}` + ";expires=" + time;
+                    } else if ($("#keep").prop("checked") == false) {
+                        document.cookie = "keeplogin" + "=" + `username=${username}&&password=${password}`;
                     }
                 }
             }
