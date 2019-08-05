@@ -45,6 +45,7 @@ body{
     display: block;
     margin: 10px auto;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .login-button{
     padding-top: 10px;
@@ -65,4 +66,28 @@ body{
 #register a{
    float: right;
     margin: 10px auto;
+}
+
+/* ========验证码部分========= */
+.captcha-input{
+    width: 190px;
+    height: 48px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#captcha{
+    background: red;
+    float: right;;
+}
+
+/* =======错误提示========= */
+#errorMsg{
+    display: block;
+    margin: 5px auto;
+    height: 28px;
+    line-height: 28px;
+    color: red;
 }

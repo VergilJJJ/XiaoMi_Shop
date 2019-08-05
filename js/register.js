@@ -1,7 +1,4 @@
 $(function () {
-
-
-
     $("#regbtn").on("click", function () {
         var phone = $("#phone").val();
         var pwdA = $("#passwordA").val();
@@ -61,7 +58,6 @@ $(function () {
                 dataType: "json",
                 url: "../server/register.php",
                 success(res) {
-
                     if (res.status == "error") {
                         $("#phone").css("border", "red 3px solid");
                         $("#errorMsg").html(res.msg).css("color", "red");

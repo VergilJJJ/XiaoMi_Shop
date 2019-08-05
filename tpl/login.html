@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小米有品登陆页</title>
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/captcha.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 
 <body>
@@ -23,12 +26,17 @@
                             <input class="log-input" id="username" type="text" placeholder="邮箱/手机号码/小米ID">
                             <input class="log-input" id="userpwd" type="password" placeholder="密码">
                         </div>
+                        <div class="captcha-input-box">
+                            <input class="captcha-input" id="captchaCode" type="text" placeholder="请输入验证码">
+                            <canvas id="captcha" width="168" height="48"></canvas>
+                        </div>
+                        <span id="errorMsg"></span>
                         <div class="login-button">
                             <input id="logbtn" type="submit" value="登陆">
                         </div>
                         <div id="log-keep">
                             <label for="keep">
-                                <input type="checkbox" id="keep">7天面登陆
+                                <input type="checkbox" id="keep">10天面登陆
                             </label>
                         </div>
                         <div id="regster">
