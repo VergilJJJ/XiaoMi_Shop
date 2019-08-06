@@ -27,7 +27,4 @@
     }
 
     echo json_encode($data, true);
-    // echo $password;
-    // print_r($result);
-// print_r(mysqli_fetch_array($result));
 ?>

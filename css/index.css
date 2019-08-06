@@ -350,6 +350,46 @@ a{
     height: 30px;
     background-position: 0 -1254px;
 }
+.m-icons-service-fixed {
+    width: 30px;
+    height: 30px;
+    background-position: 0 -1628px;
+}
+.m-icons-service-fixed:hover {
+    background-position: 0 -1594px;
+}
 .m-icons-download {
-    
+    width: 30px;
+    height: 30px;
+    background-position: 0 -1254px;
+}
+.m-icons-download:hover{
+    background-position: 0 -1220px;
+}
+.m-icons-gift {
+    width: 30px;
+    height: 30px;
+    background-position: 0 -778px;
+}
+.m-icons-gift:hover{
+    background-position: 0 -744px;
+}
+.m-icons-wx-chat {
+    width: 30px;
+    height: 30px;
+    background-position: 0 -982px;
+}
+.m-icons-wx-chat:hover{
+    background-position: 0 -1764px;
+}
+.m-icons-top {
+    width: 30px;
+    height: 30px;
+    background-position: 0 -1288px;
+}
+.m-icons-top:hover{
+    background-position: 0 -1322px;
+}
+.fixed-nav li:hover p{
+    color:#845f3f;
 }
