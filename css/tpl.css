@@ -127,22 +127,25 @@ a{
     box-shadow: 0 3px 28px rgba(0,0,0,.1);
     -webkit-transition: all .3s cubic-bezier(0,1,.5,1);
     -o-transition: all .3s cubic-bezier(0,1,.5,1);
-    transition: all .3s cubic-bezier(0,1,.5,1);
+    transition: all .6s cubic-bezier(0,1,.5,1);
     background: #fff;
+    z-index: 9;
 }
 
 .m-site-top a:hover{
     color: #fff;
 }
-.m-site-top .site-item-nav {
-    height: 0;
-    opacity: 0;
+
+.m-clauses-con:hover .site-item-nav{
+    height: 70px;
+    opacity: 1;
 }
 .m-site-top .m-clauses-con .site-item-nav {
     width: 160px;
     /* height: 200px; */
-    translate: all 10s;
+    /* transform: all 2000; */
 }
+
 .m-clauses-con{
     position: relative;
 }
@@ -154,10 +157,7 @@ a{
     line-height: 35px;
     padding: 0 10px;
 }
-.m-clauses-con:hover .site-item-nav{
-    height: 70px;
-    opacity: 1;
-}
+
 .site-nav li{
     text-align: center;
 }
@@ -176,7 +176,7 @@ a{
 .m-header {
     position: relative;
     height: 51px;
-    z-index: 101;
+    z-index: 1;
     padding-top: 20px;
     margin-bottom: 5px;
     background-color: #fff;
@@ -193,11 +193,13 @@ a{
 .container {
     width: 1080px;
     margin: 0 auto;
+    height: 51px;
 }
 .m-header-top {
     position: relative;
     padding-right: 40px;
-    z-index: 9;
+    z-index: 2;
+    height: 51px;
 }
 .m-header .m-logo {
     float: left;
@@ -226,6 +228,7 @@ a{
     width: 60px;
     height: 51px;
     line-height: 51px;
+    opacity: 0;
 }
 .m-header-fixed .nav-part .nav-arrow-container {
     display: inline-block;
@@ -233,11 +236,13 @@ a{
 .m-header .nav-part .nav-arrow-container .h-down-icon {
     top: 12px;
 }
+
 .m-header .tab-list {
     display: inline-block;
     float: left;
     width: 420px;
     overflow: hidden;
+    position: absolute;;
 }
 .m-header .tab-list li.tab-item {
     float: left;
@@ -266,7 +271,9 @@ a{
     background-position: 0 -948px;
 }
 .m-header .m-search {
-    float: right;
+    position: absolute;
+    /* float: right; */
+    right: 30px;
 }
 
 .m-search {
@@ -419,4 +426,15 @@ a{
 }
 .m-footer .footer-item a {
     color: #666;
+}
+
+
+/* 吸顶css */
+.ceilingType{
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 888;
 }
