@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Document</title>
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/tpl.css">
+    <link rel="stylesheet" href="./css/fix-tpl.css">
+    <link rel="stylesheet" href="./css/nav-tpl.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./lib/jquery-3.4.1.js"></script>
     <script src="./lib/include.js"></script>
-    <script src="./js/tpl.js"></script>
+    <script src="./js/fix-tpl.js"></script>
+    <script src="./js/nav-list-tpl.js"></script>
 </head>
 
 <body>
@@ -19,8 +23,8 @@
 
             <include src="./tpl/fix-tpl/top.html"></include>
             <include src="./tpl/fix-tpl/header.html"></include>
-            <div class="" style="height: 3000px">
-
+            <div class="banner-nav" style="height: 3000px">
+                <include src="./tpl/nav-tpl/nav-list.html"></include>
             </div>
             <include src="./tpl/fix-tpl/fixedBar.html"></include>
             <include src="./tpl/fix-tpl/footer.html"></include>

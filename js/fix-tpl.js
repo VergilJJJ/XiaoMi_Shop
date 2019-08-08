@@ -80,7 +80,7 @@ $(function () {
     function checkScroll() {
         var top = $(window).scrollTop();
         if (top >= 300) {
-            console.log("大于300");
+            // console.log("大于300");
             $(".m-header").addClass("ceilingType");
 
             // ================预留
@@ -92,8 +92,13 @@ $(function () {
         }
     }
 
-
-
+    // ======================fixedBar部分事件
+    function toTop() {
+        $(".m-icons-top").parent().on("click", function () {
+            $(window).scrollTop("0");
+            // console.log("回到顶部");
+        })
+    }
 
     // =================================top部分的js代码=============================
     function RunTop() {
@@ -101,7 +106,14 @@ $(function () {
         clearUser();
         hover();
     }
+    function RunHeader() {
+        keepHeader();
+        checkScroll();
+    }
+    function RunFixedBar() {
+        toTop()
+    }
     RunTop();
-    keepHeader()
-    checkScroll()
+    RunHeader();
+    RunFixedBar();
 })

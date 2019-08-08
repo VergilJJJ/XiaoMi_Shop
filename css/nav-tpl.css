@@ -1,0 +1,39 @@
+.nav-container {
+    position: relative;
+    height: 338px;
+    background-color: #845f3f;
+    padding: 10px 0;
+    width: 221px;
+    float: left;
+    z-index: 2;
+}
+.nav-container .nav-list {
+    overflow: hidden;
+}
+.nav-list li {
+    float: left;
+    height: 46px;
+    text-align: center;
+    cursor: pointer;
+}
+.nav-container .nav-list .nav-item {
+    width: 165px;
+    padding: 0 30px;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    text-align: left;
+    overflow: hidden;
+}
+.nav-container .nav-list .nav-item:hover {
+    background-color: #684b34;
+    color: #f1ede9;
+}
+.nav-container .nav-list .nav-item a:hover {
+    color: #e4af82;
+    cursor: pointer;
+}
