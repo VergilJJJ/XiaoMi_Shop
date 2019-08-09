@@ -67,7 +67,7 @@
 .container {
     width: 1080px;
     margin: 0 auto;
-    height:306px;
+    height:100%;
 }
 .h-sec-top .h-subTit {
     color: #333;
@@ -296,4 +296,202 @@ img {
     width: 130px;
     height: 130px;
     z-index: 4;
+}
+/* =============限时抢购=========== */
+.p-trap-wrap {
+    padding-top: 40px;
+}
+.h-sec-top {
+    position: relative;
+    z-index: 99;
+    margin-bottom: 20px;
+}
+.h-sec-top .h-subTit {
+    color: #333;
+    font-size: 28px;
+    font-weight: 400;
+}
+.p-trap-wrap .trap-top-main .timestr {
+    margin-left: 12px;
+}
+.p-trap-wrap .trap-top-main .timestr img {
+    width: 18px;
+    height: 18px;
+    vertical-align: -15%;
+}
+.p-trap-wrap .trap-top-main .timestr span {
+    margin-left: 3px;
+    font-size: 18px;
+    color: #a92112;
+}
+.p-trap-wrap .trap-top-main .countdown {
+    height: 23px;
+    margin-left: 6px;
+    position: relative;
+    top: 12px;
+}
+.h-countdown-wrap .m-countdown-dot-home {
+    display: inline-block;
+    font-size: 15px;
+    color: #b04337;
+}
+.h-countdown-wrap .time-item-home {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    margin: 0 3px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    background: #b04337;
+}
+/* 商品栏部分  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!通用*/
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 2;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+}
+.m-icons-forward-hover {
+    width: 38px;
+    height: 38px;
+    background-position: 0 -1924px;
+}
+.swiper-button-next {
+    right: 10px;
+}
+.swiper-button-prev {
+    left: 10px;
+}
+.m-icons-next-hover {
+    width: 38px;
+    height: 38px;
+    background-position: 0 -1840px;
+}
+.m-icons-next-hover:hover {
+    background-position: 0 -1882px;
+}
+.m-icons-forward-hover:hover {
+    background-position: 0 -1798px;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 100%;;
+    width: 266.25px;
+     margin-right: 5px;
+    position: relative;
+}
+.bigtrap-img-tag-container {
+    width: 266px;
+    height: 266px;
+    position: relative;
+}
+.bigtrap-box {
+    background: #faf6ef;
+    padding-top: 13px;
+    padding-bottom: 15px;
+}
+.bigtrap-box .pro-info {
+    color: #333;
+    font-size: 19px;
+    line-height: 23px;
+    height: 23px;
+    margin-top: 0;
+}
+
+.m-goods-item-container {
+    position: relative;
+    float: left;
+    width: 266px;
+    margin-left: 5px;
+    text-align: center;
+    background: #fff;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    cursor: pointer;
+}
+.m-goods-item-container .pro-info {
+    color: #333;
+    margin-top: 8px;
+    font-size: 19px;
+    line-height: 23px;
+    height: 23px;
+}
+.bigtrap-box .pro-price {
+    margin-bottom: 0;
+}
+.m-goods-item-container .pro-price {
+    margin-top: 11px;
+    margin-bottom: 0;
+    height: 26px;
+    line-height: 26px;
+    color: #a92112;
+    overflow: hidden;
+}
+.m-goods-item-container .pro-unit {
+    font-size: 15px;
+}
+.m-goods-item-container .m-num {
+    font-size: 22px;
+}
+.pro-flag, .pro-ori, .pro-unit {
+    font-size: 12px;
+}
+.m-goods-item-container .market-price {
+    text-decoration: line-through;
+    color: #333;
+    margin-left: 5px;
+}
+.m-goods-item-container .market-price .pro-unit {
+    font-size: 9px;
+}
+.m-goods-item-container .market-price .m-num {
+    font-size: 14px;
+}
+
+/* 推荐部分 */
+.h-new-sec {
+    margin-top: 60px;
+    padding-bottom: 28px;
+}
+.h-sec-top .h-subTit{
+    color: #333;
+    font-size: 28px;
+    font-weight: 400;
+}
+.h-sec-top .h-subTit span {
+    margin-left: 12px;
+    font-size: 14px;
+    color: #999;
 }
