@@ -33,3 +33,16 @@ list.each(function (index, ele) {
     arrT.push(o)
 })
 console.log(arrT);
+
+var list = $(".cate-detail-list").eq(1).children(".m-tag-a");
+var arrT = [];
+var ID = 200000;
+list.each(function (index, ele) {
+    var o = {};
+    ID += 1;
+    o.ID = ID;
+    o.name = $(ele).find("span").html();
+    o.imgUrl = $(ele).find("img").attr("src");
+    arrT.push(o)
+})
+console.log(arrT);
