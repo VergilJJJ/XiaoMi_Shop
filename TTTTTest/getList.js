@@ -46,3 +46,19 @@ list.each(function (index, ele) {
     arrT.push(o)
 })
 console.log(arrT);
+
+// 列表页
+var list = $(".m-product-list").eq(0).children(".pro-item");
+var arrT = [];
+var ID = 100001000;
+list.each(function (index, ele) {
+    var o = {};
+    ID += 1;
+    o.ID = ID;
+    o.imgUrl = $(ele).find("img").attr("src");
+    o.p_info = $(ele).find(".pro-info").attr("title");
+    o.p_desc = $(ele).find(".pro-desc").attr("title");
+    o.price = $(ele).find(".m-num").html();
+    arrT.push(o);
+})
+console.log(arrT);

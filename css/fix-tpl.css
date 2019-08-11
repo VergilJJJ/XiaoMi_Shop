@@ -401,6 +401,8 @@ a{
     border-top: 1px solid #e7e7e7;
     background-color: #fff;
     color: #666;
+    position: relative;
+    bottom: 0px;
     }
 .m-footer .m-f-logo img {
         width: 123px;
