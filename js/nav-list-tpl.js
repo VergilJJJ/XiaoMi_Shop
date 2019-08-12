@@ -55,7 +55,7 @@ $(function () {
                 $(div).appendTo($(".nav-detail"));
             }
         });
-        
+
         $.ajax({
             type: "get",
             data: { id: Bid },

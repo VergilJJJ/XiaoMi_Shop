@@ -41,7 +41,7 @@
     display: block;
 }
 .nav-container .nav-detail {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 221px;

@@ -35,6 +35,7 @@ $(function () {
     })
 
     $(".typeGoods-item ").on("click", ".m-product-list .pro-item", function () {
-        console.log($(this).attr("commoID"));
+        var gid = $(this).attr("commoID")
+        window.open(`http://127.0.0.1/xiaomi_shop/tpl/commodity.html?gid=${gid}`);
     });
 })
